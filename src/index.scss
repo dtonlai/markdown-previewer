@@ -1,0 +1,69 @@
+//Sass style variables
+$main-fonts: sans-serif;
+$background-color: #adb5bd;
+$white: #f8f9fa;
+$dark-grey: #343a40;
+$light-grey: #dee2e6;
+$open-sans: "Open Sans", sans-serif;
+
+body {
+  color: $dark-grey;
+  background-color: $background-color;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#editor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 30vmin;
+
+  .tool-bar {
+    display: flex;
+    align-items: center;
+    font-family: $open-sans;
+    color: $white;
+    background-color: $dark-grey;
+    height: 12%;
+    width: 100%;
+  }
+
+  textarea {
+    background-color: $white;
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    padding: 0;
+  }
+
+  #editor {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#previewer-container {
+  font-family: "Open Sans", sans-serif;
+  background-color: $light-grey;
+  margin-top: 2rem;
+  width: 80%;
+  border-radius: 5px;
+  padding: 1rem;
+
+  code {
+    background-color: $white;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+}

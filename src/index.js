@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import marked from 'marked';
+import './index.scss';
 import reportWebVitals from './reportWebVitals';
 
 class MarkdownPreviewer extends React.Component {
@@ -32,7 +33,7 @@ class MarkdownPreviewer extends React.Component {
             </div>
             
             <div id="previewer-container" class="container">
-              {/*<div id="preview" dangerouslySetInnerHTML={{ __html: marked(this.state.input) }}></div>*/}
+              <div id="preview" dangerouslySetInnerHTML={{ __html: marked(this.state.input) }}></div>
             </div>
             
         </div>
